@@ -59,9 +59,9 @@ if __name__ == "__main__":
         elif 'time' in command:
             time = datetime.datetime.now().strftime('%I:%M %p')
             talk('Current time is ' + time)
-        elif 'wiki' in command:
-            search = command.replace('wiki', '')
-            info = wikipedia.summary(search, 6)
+        elif 'search' in command:
+            wiki = command.replace('wiki', '')
+            info = wikipedia.summary(wiki, 6)
             print(info)
             talk(info)
         elif 'date' in command:
