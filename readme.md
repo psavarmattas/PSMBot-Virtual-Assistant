@@ -26,6 +26,8 @@ to see if you find any issue that matches your which is already
 resolved before opening an issues.
 
 ## Steps:
+
+### For Windows users:
 1. Open PyCharm & create a new project with your virtual environment ready.
 2. Open the terminal and paste the following in sequential order line by line(Execute it one by one):
 
@@ -45,3 +47,9 @@ _Install this if necessary (Only when the code gives error)_
 
 3. Copy the code given in main.py (in this git) & you will have the code up & running on your pc.
 4. If you want to learn how this code actually works the go watch my YouTube video for a better understanding.
+
+### For Linux/MacOs users:
+
+1. Learn all the above commands on terminal. 
+2. Make sure to use pip3, because in linux pip refers for python2 and pip3 refers to python3.
+3. Install these too - `pip3 install pyAudio`
