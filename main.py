@@ -61,7 +61,7 @@ if __name__ == "__main__":
             talk('Current time is ' + time)
         elif 'wiki' in command:
             search = command.replace('wiki', '')
-            info = wikipedia.summary(search, 1)
+            info = wikipedia.summary(search, 6)
             print(info)
             talk(info)
         elif 'date' in command:
