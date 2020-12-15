@@ -31,7 +31,7 @@ resolved before opening an issues.
 1. Open PyCharm & create a new project with your virtual environment ready.
 2. Open the terminal and paste the following in sequential order line by line(Execute it one by one):
 
-`pip install speechRecognistion`
+`pip install speechRecognition`
 
 `pip install pyttsx3`
 
