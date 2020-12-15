@@ -11,11 +11,11 @@ step by step with me and by the end of it you will have your own
 virtual assistant up & running as a charm.
 
 To learn more about how I did it you can watch my YouTube
-video on this or click here.
+video on this or [click here]().
 
 ### Pre-Requisites:
-1. Python Interpreter (Like PyCharm)
-2. Python Environment (Like Anaconda)
+1. Python Interpreter (Like [PyCharm](https://www.jetbrains.com/pycharm/))
+2. Python Environment (Like [Anaconda](https://www.anaconda.com/products/individual))
 3. Basic knowledge of how Python works & computers work
 4. A will to explore
 
@@ -46,7 +46,7 @@ _Install this if necessary (Only when the code gives error)_
 `pip install pyaudio`
 
 3. Copy the code given in main.py (in this git) & you will have the code up & running on your pc.
-4. If you want to learn how this code actually works the go watch my YouTube video for a better understanding.
+4. If you want to learn how this code actually works the go [watch my YouTube video]() for a better understanding.
 
 ### For Linux/MacOs users:
 
