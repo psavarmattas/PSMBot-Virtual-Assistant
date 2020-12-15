@@ -67,7 +67,7 @@ if __name__ == "__main__":
         elif 'date' in command:
             talk('sorry, I have a headache')
         elif 'are you single' in command:
-            talk('I am in a relationship with amazon')
+            talk('I am in a relationship with PSMForums')
         elif 'joke' in command:
             talk('Let me get you laughing')
             talk(pyjokes.get_joke())
