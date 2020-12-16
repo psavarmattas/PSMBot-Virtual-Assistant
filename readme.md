@@ -13,7 +13,7 @@ virtual assistant up & running as a charm.
 To learn more about how I did it you can watch my YouTube
 video on this or [click here]().
 
-### Pre-Requisites:
+## Pre-Requisites:
 1. Python Interpreter (Like [PyCharm](https://www.jetbrains.com/pycharm/))
 2. Python Environment (Like [Anaconda](https://www.anaconda.com/products/individual))
 3. Basic knowledge of how Python works & computers work
