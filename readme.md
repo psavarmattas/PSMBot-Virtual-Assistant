@@ -31,7 +31,7 @@ resolved before opening an issues.
 1. Open PyCharm & create a new project with your virtual environment ready.
 2. Open the terminal and paste the following in sequential order line by line(Execute it one by one):
 
-`pip install speechRecognition`
+`pip install speechRecognistion`
 
 `pip install pyttsx3`
 
@@ -53,3 +53,11 @@ _Install this if necessary (Only when the code gives error)_
 1. Learn all the above commands on terminal. 
 2. Make sure to use pip3, because in linux pip refers for python2 and pip3 refers to python3.
 3. Install these too - `pip3 install pyAudio`
+
+
+## Feature List:
+
+1. Play videos on YouTube.
+2. Search wikipedia with your queries.
+3. Listen to jokes.
+4. Ask for the weather (only New Delhi,India available right now)

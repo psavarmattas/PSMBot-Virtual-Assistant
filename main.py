@@ -9,13 +9,14 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
+import json
 import speech_recognition as sr
 import pyttsx3
 import pywhatkit
 import datetime
 import wikipedia
 import pyjokes
-
+import weather
 
 listener = sr.Recognizer()
 engine = pyttsx3.init()
@@ -71,6 +72,23 @@ if __name__ == "__main__":
         elif 'joke' in command:
             talk('Let me get you laughing')
             talk(pyjokes.get_joke())
+        elif 'weather' in command:
+            command = command.replace('weather', '')
+            if weather.response.status_code == 200:
+                talk('The Weather In:')
+                talk(weather.weather_city)
+                print(weather.weather_city)
+                talk(weather.weather_temperature)
+                print(weather.weather_temperature)
+                talk(weather.weather_humidity)
+                print(weather.weather_humidity)
+                talk(weather.weather_pressure)
+                print(weather.weather_pressure)
+                talk(weather.weather_report)
+                print(weather.weather_report)
+            else:
+                talk(weather.weather_error)
+                print(weather.weather_error)
         elif 'stop' in command:
             break
         else:
