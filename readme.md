@@ -60,4 +60,4 @@ _Install this if necessary (Only when the code gives error)_
 1. Play videos on YouTube.
 2. Search wikipedia with your queries.
 3. Listen to jokes.
-4. Ask for the weather (only New Delhi,India available right now)
+4. Ask for the weather (only New Delhi, India available right now)
