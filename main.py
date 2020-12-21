@@ -56,22 +56,26 @@ if __name__ == "__main__":
 
         if 'play' in command:
             song = command.replace('play', '')
-            talk('playing ' + song)
+            talk('playing ' + song + 'opening web browser')
             pywhatkit.playonyt(song)
         elif 'time' in command:
             time = datetime.datetime.now().strftime('%I:%M %p')
             talk('Current time is ' + time)
-        elif 'search' in command:
-            wiki = command.replace('wiki', '')
-            info = wikipedia.summary(wiki, 6)
-            print(info)
+        elif 'search on wikipedia' in command:
+            search = command.replace('search on wikipedia', '')
+            info = wikipedia.summary(search, 6)
+            print('Searching ' + info)
             talk(info)
+        elif 'search on google' in command:
+            searchg = command.replace('search on google', '')
+            pywhatkit.search(searchg)
+            talk('Searching' + searchg + 'opening web browser')
         elif 'date' in command:
             talk('sorry, I have a headache')
         elif 'are you single' in command:
             talk('I am in a relationship with PSMForums')
         elif 'joke' in command:
-            talk('Let me get you laughing')
+            talk('Let me get you laughing...')
             talk(pyjokes.get_joke())
         elif 'weather' in command:
             command = command.replace('weather', '')
