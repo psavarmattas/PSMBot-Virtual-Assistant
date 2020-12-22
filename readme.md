@@ -1,5 +1,6 @@
 # **Create your own virtual assistant with just a few lines code (Using only PYTHON)**
 
+_`Last Updated: December 22' 2020`_
 
 Hello & Welcome to this git page. Here I just created my own 
 virtual assistant with just a few lines of code. It is not an 
@@ -16,8 +17,21 @@ video on this or [click here]().
 ## Pre-Requisites:
 1. Python Interpreter (Like [PyCharm](https://www.jetbrains.com/pycharm/))
 2. Python Environment (Like [Anaconda](https://www.anaconda.com/products/individual))
-3. Basic knowledge of how Python works & computers work
-4. A will to explore
+3. This [git repo](https://github.com/psavarmattas/PSMBot-Virtual-Assistant.git)
+4. Bellow mentioned python packages:
+
+-> [speechrecognition](https://pypi.org/project/SpeechRecognition/)
+
+-> [pyttsx3](https://pypi.org/project/pyttsx3/)
+
+-> [pywhatkit](https://pypi.org/project/pywhatkit/)
+
+-> [wikipedia](https://pypi.org/project/wikipedia/)
+
+-> [pyjokes](https://pypi.org/project/pyjokes/)
+
+5. Basic knowledge of how Python works & computers work
+6. A will to explore
 
 When all the above pre-requisites are there and ready you can 
 start to work on your own virtual assistant. Please follow each 
@@ -46,6 +60,7 @@ _Install this if necessary (Only when the code gives error)_
 `pip install pyaudio`
 
 3. Copy the code given in main.py (in this git) & you will have the code up & running on your pc.
+_(Note: Creating two different files for weather & main you will have to import weather.py in the main.py file by using the `import weather` code in the main.py, therefore please make sure that the code for it is there or an error will be produced while running the weather command in the assistant.)_
 4. If you want to learn how this code actually works the go [watch my YouTube video]() for a better understanding.
 
 ### For Linux/MacOs users:
@@ -55,7 +70,7 @@ _Install this if necessary (Only when the code gives error)_
 3. Install these too - `pip3 install pyAudio`.
 
 
-## Feature List:
+## Feature List (v1.0):
 
 1. Play videos on YouTube.
 2. Search wikipedia with your queries.
