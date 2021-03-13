@@ -1,4 +1,4 @@
-#  Copyright (c) 2020 PSMForums. All rights reserved.
+#  Copyright (c) 2021 PSMForums. All rights reserved.
 #  Licensed under the Apache License, Version 2.0 (the "License");
 #  you may not use this file except in compliance with the License.
 #  You may obtain a copy of the License at
@@ -9,52 +9,8 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-# importing requests and json
-import requests, json
+# API Key
+api_key = "a4212b9586f6bf848e1c47839ebfc5e9" #Your API Key here
 
-# base URL
-BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
-
-# City Name
-CITY = "New Delhi"
-
-# API key
-API_KEY = "a4212b9586f6bf848e1c47839ebfc5e9"
-
-# Updating the URL
-URL = BASE_URL + "q=" + CITY + "&appid=" + API_KEY
-
-# HTTP request
-response = requests.get(URL)
-
-# checking the status code of the request
-
-if response.status_code == 200:
-
-    # getting data in the json format
-    data = response.json()
-
-    # getting the main dict block
-    main = data['main']
-
-    # getting temperature
-    temperature = main['temp']
-
-    # getting the humidity
-    humidity = main['humidity']
-
-    # getting the pressure
-    pressure = main['pressure']
-
-    # weather report
-
-    report = data['weather']
-    weather_city = f"{CITY:-^30}"
-    weather_temperature = f"Temperature: {temperature}"
-    weather_humidity = f"Humidity: {humidity}"
-    weather_pressure = f"Pressure: {pressure}"
-    weather_report = f"Weather Report: {report[0]['description']}"
-
-else:
-    # showing the error message
-    weather_error = "Error in the HTTP request please try again"
+# Base URL
+weather_url = "http://api.openweathermap.org/data/2.5/weather?"

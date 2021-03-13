@@ -1,6 +1,6 @@
 # **Create your own virtual assistant with just a few lines code (Using only PYTHON)**
 
-_`Last Updated: December 22' 2020`_
+_`Last Updated: March 13' 2020`_
 
 Hello & Welcome to this git page. Here I just created my own 
 virtual assistant with just a few lines of code. It is not an 
@@ -12,7 +12,7 @@ step by step with me and by the end of it you will have your own
 virtual assistant up & running as a charm.
 
 To learn more about how I did it you can watch my YouTube
-video on this or [click here]().
+video on this or [click here](https://www.youtube.com/channel/UCz6SDxk2KQqJAD6Ra_YPm6A).
 
 ## Pre-Requisites:
 1. Python Interpreter (Like [PyCharm](https://www.jetbrains.com/pycharm/))
@@ -30,8 +30,13 @@ video on this or [click here]().
 
 -> [pyjokes](https://pypi.org/project/pyjokes/)
 
+-> [wolframalpha](https://pypi.org/project/wolframalpha/)
+
 5. Basic knowledge of how Python works & computers work
 6. A will to explore
+7. Get API keys for the following to test your assistant yourself or 
+just use the one I provide you with but it is better to use your API keys 
+so that you don't bottle neck you assistant.
 
 When all the above pre-requisites are there and ready you can 
 start to work on your own virtual assistant. Please follow each 
@@ -55,25 +60,31 @@ resolved before opening an issues.
 
 `pip install pyjokes`
 
+`pip install wolframalpha`
+
+
 _Install this if necessary (Only when the code gives error)_
 
 `pip install pyaudio`
 
 3. Copy the code given in main.py (in this git) & you will have the code up & running on your pc.
 _(Note: Creating two different files for weather & main you will have to import weather.py in the main.py file by using the `import weather` code in the main.py, therefore please make sure that the code for it is there or an error will be produced while running the weather command in the assistant.)_
-4. If you want to learn how this code actually works the go [watch my YouTube video]() for a better understanding.
+4. If you want to learn how this code actually works the go [watch my YouTube video](https://www.youtube.com/channel/UCz6SDxk2KQqJAD6Ra_YPm6A) for a better understanding.
 
 ### For Linux/MacOs users:
 
 1. Learn all the above commands on terminal. 
 2. Make sure to use pip3, because in linux pip refers for python2 and pip3 refers to python3.
-3. Install these too - `pip3 install pyAudio`.
+3. Install this too - `pip3 install pyAudio`.
 
 
-## Feature List (v1.0):
+## Feature List (v2.0):
 
 1. Play videos on YouTube.
-2. Search wikipedia with your queries.
+2. Search Wikipedia with your queries.
 3. Search google with your queries.
 4. Listen to jokes.
-5. Ask for the weather (only New Delhi, India available right now).
+5. Ask for the weather (Anywhere in the world).
+6. It can solve complex math problems for you.
+7. Ask it for today's date & time.
+8. Say "thanks" or "thank you" and the assistant will appreciate you.

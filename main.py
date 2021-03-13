@@ -1,4 +1,4 @@
-#  Copyright (c) 2020 PSMForums. All rights reserved.
+#  Copyright (c) 2021 PSMForums. All rights reserved.
 #  Licensed under the Apache License, Version 2.0 (the "License");
 #  you may not use this file except in compliance with the License.
 #  You may obtain a copy of the License at
@@ -16,7 +16,10 @@ import pywhatkit
 import datetime
 import wikipedia
 import pyjokes
+import wolframalpha
 import weather
+import requests, json
+import pprint
 
 listener = sr.Recognizer()
 engine = pyttsx3.init()
@@ -77,23 +80,35 @@ if __name__ == "__main__":
         elif 'joke' in command:
             talk('Let me get you laughing...')
             talk(pyjokes.get_joke())
-        elif 'weather' in command:
-            command = command.replace('weather', '')
-            if weather.response.status_code == 200:
-                talk('The Weather In:')
-                talk(weather.weather_city)
-                print(weather.weather_city)
-                talk(weather.weather_temperature)
-                print(weather.weather_temperature)
-                talk(weather.weather_humidity)
-                print(weather.weather_humidity)
-                talk(weather.weather_pressure)
-                print(weather.weather_pressure)
-                talk(weather.weather_report)
-                print(weather.weather_report)
+        elif "what is the weather in" in command:
+            command = command.split(" ")
+            location = str(command[5])
+            url = weather.weather_url + "appid=" + weather.api_key + "&q=" + location 
+            js = requests.get(url).json() 
+            if js["cod"] != "404": 
+                weather = js["main"] 
+                temp = weather["temp"] 
+                hum = weather["humidity"] 
+                desc = js["weather"][0]["description"]
+                resp_string = "The temperature at " + location + " in Kelvin is " + str(temp) + " \nThe humidity is " + str(hum) + "\nand \nThe weather description is "+ str(desc)
+                print(resp_string)
+                talk(resp_string)
             else:
-                talk(weather.weather_error)
-                print(weather.weather_error)
+                print("City Not Found") 
+                talk("City Not Found")
+        elif 'calculate' in command:
+            app_id = "JWP25T-Y434EXL697" #Your API key here
+            client = wolframalpha.Client(app_id) 
+            indx = command.lower().split().index('calculate') 
+            query = command.split()[indx + 1:] 
+            res = client.query(' '.join(query))
+            answer = next(res.results).text
+            print('The answer is ' + answer)
+            talk('The answer is:' + answer)
+        elif 'thank you' in command:
+            talk('Your welcome, Happy to help you')
+        elif 'thanks' in command:
+            talk('Your welcome, Happy to help you')
         elif 'stop' in command:
             break
         else:
