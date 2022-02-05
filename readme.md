@@ -1,6 +1,6 @@
 # **Create your own virtual assistant with just a few lines code (Using only PYTHON)**
 
-_`Last Updated: March 13' 2020`_
+_`Last Updated: February 05' 2022`_
 
 Hello & Welcome to this git page. Here I just created my own 
 virtual assistant with just a few lines of code. It is not an 
@@ -15,6 +15,7 @@ To learn more about how I did it you can watch my YouTube
 video on this or [click here](https://www.youtube.com/channel/UCz6SDxk2KQqJAD6Ra_YPm6A).
 
 ## Pre-Requisites:
+
 1. Python Interpreter (Like [PyCharm](https://www.jetbrains.com/pycharm/))
 2. Python Environment (Like [Anaconda](https://www.anaconda.com/products/individual))
 3. This [git repo](https://github.com/psavarmattas/PSMBot-Virtual-Assistant.git)
@@ -25,8 +26,6 @@ video on this or [click here](https://www.youtube.com/channel/UCz6SDxk2KQqJAD6Ra
 -> [pyttsx3](https://pypi.org/project/pyttsx3/)
 
 -> [pywhatkit](https://pypi.org/project/pywhatkit/)
-
--> [wikipedia](https://pypi.org/project/wikipedia/)
 
 -> [pyjokes](https://pypi.org/project/pyjokes/)
 
@@ -47,21 +46,11 @@ resolved before opening an issues.
 ## Steps:
 
 ### For Windows users:
+
 1. Open PyCharm & create a new project with your virtual environment ready.
-2. Open the terminal and paste the following in sequential order line by line(Execute it one by one):
+2. Open the terminal and paste the command highlighted below:
 
-`pip install speechRecognistion`
-
-`pip install pyttsx3`
-
-`pip install pywhatkit`
-
-`pip install wikipedia`
-
-`pip install pyjokes`
-
-`pip install wolframalpha`
-
+`pip install -r requirements.txt `
 
 _Install this if necessary (Only when the code gives error)_
 
@@ -81,10 +70,10 @@ _(Note: Creating two different files for weather & main you will have to import 
 ## Feature List (v2.0):
 
 1. Play videos on YouTube.
-2. Search Wikipedia with your queries.
-3. Search google with your queries.
-4. Listen to jokes.
-5. Ask for the weather (Anywhere in the world).
-6. It can solve complex math problems for you.
-7. Ask it for today's date & time.
-8. Say "thanks" or "thank you" and the assistant will appreciate you.
+2. Search google with your queries.
+3. Listen to jokes.
+4. Ask for the weather (Anywhere in the world).
+5. It can solve complex math problems for you.
+6. Ask it for today's date & time.
+7. Say "thanks" or "thank you" and the assistant will appreciate you.
+8. One command requirements install.

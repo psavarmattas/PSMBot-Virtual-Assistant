@@ -1,0 +1,31 @@
+# import news 
+# from googlemaps import GoogleMaps
+        
+        # elif 'news' in command:
+        #     talk(news.news_title)
+        #     print(news.news_title + '\n')
+        #     print('-----------------------------------------------------------------------------------------\n')
+        #     talk(news.news_description)
+        #     print(news.news_description + '\n')
+        #     print('-----------------------------------------------------------------------------------------\n')
+
+            # print(command)
+            # news_res = command.news()
+            # talk(f"I have found {len(news_res)} news. You can read it. Let me tell you first 2 of them")
+            # talk(news_res[0])
+            # print(news_res[0])
+            # talk(news_res[1])
+            # print(news_res[1])
+            # print(news_res)
+        # elif 'open maps' in command:
+        #     command = command.replace('open maps', '')
+        #     gmaps = GoogleMaps(api_key)
+        #     print('Opening Maps...')
+        #     talk('Opening Maps')
+        #     print('What do you want to find?')
+        #     talk('What do you want to find')
+        #     local = gmaps.local_search(destination)
+
+weather api key = "a4212b9586f6bf848e1c47839ebfc5e9"
+
+wolframalpha = "JWP25T-Y434EXL697"

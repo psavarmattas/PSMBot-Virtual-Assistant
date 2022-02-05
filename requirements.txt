@@ -1,0 +1,40 @@
+astroid @ file:///C:/ci/astroid_1639044403229/work
+beautifulsoup4==4.9.3
+certifi==2021.10.8
+chardet==4.0.0
+colorama @ file:///tmp/build/80754af9/colorama_1607707115595/work
+comtypes==1.1.8
+idna==2.10
+isort @ file:///tmp/build/80754af9/isort_1628603791788/work
+jaraco.context==4.0.0
+lazy-object-proxy @ file:///C:/ci/lazy-object-proxy_1616529307648/work
+mccabe==0.6.1
+more-itertools==8.7.0
+MouseInfo==0.1.3
+Pillow==8.1.2
+platformdirs @ file:///tmp/build/80754af9/platformdirs_1638968569495/work
+PyAudio==0.2.11
+PyAutoGUI==0.9.52
+PyGetWindow==0.0.9
+pyjokes==0.6.0
+pylint @ file:///C:/ci/pylint_1639650750934/work
+PyMsgBox==1.0.9
+pyperclip==1.8.2
+pypiwin32==223
+PyRect==0.1.4
+PyScreeze==0.1.26
+pyttsx3==2.90
+PyTweening==1.0.3
+pywhatkit==3.9
+pywin32==300
+requests==2.25.1
+six @ file:///tmp/build/80754af9/six_1623709665295/work
+soupsieve==2.2
+SpeechRecognition==3.8.1
+toml @ file:///tmp/build/80754af9/toml_1616166611790/work
+typing-extensions @ file:///tmp/build/80754af9/typing_extensions_1631814937681/work
+urllib3==1.26.3
+wincertstore==0.2
+wolframalpha==5.0.0
+wrapt @ file:///C:/ci/wrapt_1638434029846/work
+xmltodict==0.12.0

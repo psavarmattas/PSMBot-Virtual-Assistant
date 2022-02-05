@@ -64,11 +64,6 @@ if __name__ == "__main__":
         elif 'time' in command:
             time = datetime.datetime.now().strftime('%I:%M %p')
             talk('Current time is ' + time)
-        elif 'search on wikipedia' in command:
-            search = command.replace('search on wikipedia', '')
-            info = wikipedia.summary(search, 6)
-            print('Searching ' + info)
-            talk(info)
         elif 'search on google' in command:
             searchg = command.replace('search on google', '')
             pywhatkit.search(searchg)
